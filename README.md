@@ -1,4 +1,35 @@
-# Project Template: React/Rails API
+# Project Four
+  Simple VRBO site
+    MVP: 
+      -Sign up for an account (create/read)
+      -Log in to the site & remain logged in - sessions
+      -Log out - delete session
+      -View home listings in area
+      -create, read, update, delete REVIEW (full crud of order)
+      -create and read new listing (create/read)
+    stetch:
+      -see available houses on a map
+      -filter avalability by location/proximity, filter by rating, filter by price 
+# Models $ Relationships
+  User
+  has_many properites 
+  has_many reviews 
+  has_many reviews, through: properties
+  username: string
+  password_digest : string
+
+  Properties
+  has_many reviews
+  has_many users
+
+  Review
+  belongs_to users
+  belongs_to properties
+
+# General Notes
+
+
+
 
 ## Description
 
