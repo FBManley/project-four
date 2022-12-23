@@ -27,6 +27,8 @@
   belongs_to properties
 
 # General Notes
+postgreSQL 
+psswrd $ manbutt
 
 
 
