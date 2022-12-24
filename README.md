@@ -1,36 +1,47 @@
 # Project Four
-  Simple VRBO site
+  Movie Reviewer
     MVP: 
       -Sign up for an account (create/read)
       -Log in to the site & remain logged in - sessions
       -Log out - delete session
       -View home listings in area
       -create, read, update, delete REVIEW (full crud of order)
-      -create and read new listing (create/read)
+      -create and read new order (create/read) ()
     stetch:
       -see available houses on a map
       -filter avalability by location/proximity, filter by rating, filter by price 
 # Models $ Relationships
   User
-  has_many properites 
-  has_many reviews 
-  has_many reviews, through: properties
-  username: string
+  has_many reviews,
+  has_many movies, through reviews
+  username : string
   password_digest : string
 
-  Properties
-  has_many reviews
+  Movie
+  title : string
+  genre : string
+  summary : text 
+  director : string
+  release_date : integer
+  would_watch_again : boolean
   has_many users
+  has_many reviews, through: users
+   
+ *Joins table Must have user submittable attribute*
 
-  Review
-  belongs_to users
-  belongs_to properties
+  Reviews
+  review : text
+  like : boolean
+  belongs_to user
+  belongs_to movie
+  
 
 # General Notes
 postgreSQL 
 psswrd $ manbutt
 
 
+<!-- postgresql: runs on own server.  -->
 
 
 ## Description
