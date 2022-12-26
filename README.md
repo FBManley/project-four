@@ -36,10 +36,12 @@
   belongs_to movie
   
 
-# General Notes
+# General Notes`
 postgreSQL 
 psswrd $ manbutt
-
+--> used sqlite3
+#
+keep phase-four open + latest putting all together 
 
 <!-- postgresql: runs on own server.  -->
 
