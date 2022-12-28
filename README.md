@@ -42,6 +42,7 @@ psswrd $ manbutt
 --> used sqlite3
 #
 keep phase-four open + latest putting all together 
+may need to create movie_review_serilaizer for properly nested data
 
 <!-- postgresql: runs on own server.  -->
 
