@@ -43,9 +43,9 @@ psswrd $ manbutt
 #
 keep phase-four open + latest putting all together 
 may need to create movie_review_serilaizer for properly nested data
-
+npx create-react-app project-four- --ADDEDA
 <!-- postgresql: runs on own server.  -->
-
+TEST
 
 ## Description
 
