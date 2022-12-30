@@ -43,9 +43,9 @@ psswrd $ manbutt
 #
 keep phase-four open + latest putting all together 
 may need to create movie_review_serilaizer for properly nested data
-npx create-react-app project-four- --ADDEDA
+npx create-react-app project-four-frontend
 <!-- postgresql: runs on own server.  -->
-TEST
+
 
 ## Description
 
@@ -71,6 +71,8 @@ See Environment Setup below for instructions on installing these tools if you
 don't already have them.
 
 ## Setup
+rails s 
+npm start --prefix client
 
 Start by **cloning** (not forking) the project template repository and removing
 the remote:

@@ -1,5 +1,5 @@
 class ReviewsController < ApplicationController
-    nefore_action :find_review, only: [:update, :delete]
+    before_action :find_review, only: [:update, :delete]
     # POST /reviews 
     def create 
         if logged_in? 
@@ -15,15 +15,20 @@ class ReviewsController < ApplicationController
     end
     # PATCH /reviews/:id
     def update 
+      review = Review.find_by(id: params[:id])
+      review.update(review_params)
+      renderjson: review, status: :accepted
     end
     # DELETE /reviews/:id
     def destroy
+        review = Review.find(params[:id])
+        review.destroy
     end
 
     private 
     def review_params
-        params.require(:review).permit(:review, :movie_id)
+        params.require(:review).permit(:review, :movie_id, :like)
     def find_review
-    @review = Review.find_by_id(params[:id])
+        @review = Review.find_by_id(params[:id])
     end
 end

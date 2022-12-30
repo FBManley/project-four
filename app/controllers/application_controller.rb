@@ -11,7 +11,7 @@ class ApplicationController < ActionController::API
   end
 
   def must_be_logged_in
-    render json: { errors: ["YOU DUMB IDIOT. Must be logged infirst"] }
+    render json: { errors: ["YOU DUMB IDIOT. Must be logged in first"] }
   end
 
 end
