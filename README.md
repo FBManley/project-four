@@ -40,11 +40,14 @@
 postgreSQL 
 psswrd $ manbutt
 --> used sqlite3
-# test
+# testtest
 keep phase-four open + latest putting all together 
 may need to create movie_review_serilaizer for properly nested data
 npx create-react-app project-four-frontend
 <!-- postgresql: runs on own server.  -->
+# FRONTEND STEPS 
+path for home
+navigation
 
 
 ## Description
