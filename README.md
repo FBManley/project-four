@@ -40,10 +40,13 @@
 postgreSQL 
 psswrd $ manbutt
 --> used sqlite3
-# testtest
+#
 keep phase-four open + latest putting all together 
 may need to create movie_review_serilaizer for properly nested data
-npx create-react-app project-four-frontend
+$ npx create-react-app project-four-frontend
+# Setup
+$ rails s 
+$ npm start --prefix client
 <!-- postgresql: runs on own server.  -->
 # FRONTEND STEPS 
 path for home
@@ -73,9 +76,7 @@ SQLite, you will need to make the following changes in the project files:
 See Environment Setup below for instructions on installing these tools if you
 don't already have them.
 
-## Setup
-rails s 
-npm start --prefix client
+
 
 Start by **cloning** (not forking) the project template repository and removing
 the remote:
